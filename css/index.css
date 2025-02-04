@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+
+/*Коротко о нас*/
+.section-title {
+    color: #f9c74f;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us-content {
+    margin-top: 40px;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature h3 {
+    color: #f9c74f;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #f9c74f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.feature-icon svg {
+    width: 60px;
+    height: 60px;
+    fill: #1a1a1a;
+}
+
+.about-icon {
+    color: #1a1a1a;
+}
+
+
+/*Шапка*/
+.navbar {
+    background-color: #1a1a1a;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #eaa03d;
+}
+
+.btn-custom{
+    background-color: #f9c74f;
+    color: #1a1a1a;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #eaa03d;
+}
+
+a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+a:hover {
+    color: #1a1a1a ;
+    text-decoration: none;
+}
+
+
+
+/*Оставьте заявку*/
+
+
+.application-form h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.application-form p {
+    color: #ffffff;
+    font-size: 16px;
+
+}
+
+.form-substr {
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    background-color: #202020;
+    border-radius: 5px;
+}
+
+.contact-info div {
+    background-color: #202020;
+    padding: 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#form-num {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#form-mail {
+    color: #FFA834;
+    font-size: 24px;
+}
+
+.application-form {
+    background-color: #202020;
+    padding: 20px;
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+#application-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#application-form input[type="text"],
+#application-form input[type="tel"],
+#application-form input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #202020;
+    border-radius: 10px;
+    padding-left: 15px;
+    
+}
+
+#application-form button {
+    display: block;
+
+    padding: 5px;
+    background-color: #ffa834;
+    color: #202020;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.privacy {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #202020;
+    border-radius: 5px;
+    font-size: 12px !important;
+}
+
+.form-group {
+    width: 350px;
+}
+
+.form-control {
+    background-color: #161616;
+    color: #575757;
+    height: 45px;
+}
+.form-control::placeholder {
+    color: #575757;
+    opacity: 1; /* Для Firefox */
+}
+.form-control:-ms-input-placeholder {
+    color: #575757;
+}
+.form-control::-ms-input-placeholder {
+    color: #575757;
+}
+
