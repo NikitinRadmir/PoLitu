@@ -6,7 +6,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/brief.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <title>Document</title>
 </head>
 <header>
@@ -18,7 +18,7 @@
                         <a class="nav-link" href="index.html">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Портфолио</a>
+                        <a class="nav-link active" href="portfolio.html">Портфолио</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Контакты</a>
@@ -29,23 +29,68 @@
                 </ul>
             </div>
             <div class="navbar-buttons d-flex justify-content-start col-5">
-                <button class="btn btn-custom mr-2">Оставить заявку</button>
-                <button class="btn btn-custom">Заполнить бриф</button>
+                <button class="btn btn-custom mr-2"><a href="#">Оставить заявку</a></button>
+                <button class="btn btn-custom"><a href="brief.html">Заполнить бриф</a></button>
             </div>
         </div>
     </nav>
 </header>
 <body>
-    <div class="portfolio-header">
-        <h1>Клипы</h1>
-    </div>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="content">
-        <p>Объяснение зачем они нужны и чем они могут помочь заказчику</p>
-        <a href="#" class="btn btn-custom">Открыть раздел</a>
-    </div>
+    <section class="imij-p">
+        <div class="portfolio-header">
+            <h1>Имиджевые и рекламные ролики</h1>
+        </div>
+        <div class="photo-container">
+            <img src="src/img/one.png" alt="Фоновое изображение">
+        </div>
+        <div class="content">
+            <p>Объяснение зачем они нужны и чем они могут помочь заказчику</p>
+            <a href="#" class="btn btn-custom portfolio-btn">Открыть раздел</a>
+        </div>
+    </section>
+
+
+    <section class="klips-p">
+        <div class="portfolio-header">
+            <h1>Клипы</h1>
+        </div>
+        <div class="photo-container">
+            <img src="src/img/two.png" alt="Фоновое изображение">
+        </div>
+        <div class="content">
+            <p>Объяснение зачем они нужны и чем они могут помочь заказчику</p>
+            <a href="#" class="btn btn-custom portfolio-btn">Открыть раздел</a>
+        </div>
+    </section>
+
+
+    <section class="reports-p">
+        <div class="portfolio-header">
+            <h1>Репортажи</h1>
+        </div>
+        <div class="photo-container">
+            <img src="src/img/three.png" alt="Фоновое изображение">
+        </div>
+        <div class="content">
+            <p>Объяснение зачем они нужны и чем они могут помочь заказчику</p>
+            <a href="#" class="btn btn-custom portfolio-btn">Открыть раздел</a>
+        </div>
+    </section>
+
+    
+    <section class="photo-p">
+        <div class="portfolio-header">
+            <h1>Фотосъёмка</h1>
+        </div>
+        <div class="photo-container">
+            <img src="src/img/four.jpg" alt="Фоновое изображение">
+        </div>
+        <div class="content">
+            <p>Объяснение зачем они нужны и чем они могут помочь заказчику</p>
+            <a href="#" class="btn btn-custom portfolio-btn">Открыть раздел</a>
+        </div>
+    </section>
+    
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
