@@ -4,16 +4,17 @@ body {
     background-color: #202020;
     color: white;
 }
+
 /* Main-video */
 
 
 .video-container {
     position: relative;
-    width: 1510px; 
+    width: 100%; 
     height: 750px; 
     margin: 0 auto;
     overflow: hidden; 
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 #myVideo {
@@ -86,14 +87,12 @@ body {
     padding: 15px;
 }
 
-
-
-
 /*Коротко о нас*/
 .section-title {
-    color: #f9c74f;
+    color: #ffa834;/*цвет*/
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-weight: 600;/*текст*/
 }
 
 .about-us-content {
@@ -106,7 +105,7 @@ body {
 }
 
 .feature h3 {
-    color: #f9c74f;
+    color: #FFA834;/*цвет*/
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -114,7 +113,7 @@ body {
 .feature-icon {
     width: 100px;
     height: 100px;
-    background-color: #f9c74f;
+    background-color: #FFA834;/*цвет*/
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -132,23 +131,168 @@ body {
     color: #1a1a1a;
 }
 
+.about-us {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+.section-title {
+    animation-delay: 0s;
+}
+.about-us-content {
+    animation-delay: 1s;
+}
+.feature {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+.feature {
+    animation-delay: 2s;
+}
+
+
+/*Кейсы*/
+.imij, .klips,
+.reports, .photo {
+    margin: 20px 0px;
+    width: 100%;
+    height: 800px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imij h1, .klips h1,
+.reports h1, .photo h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.imij h1 {
+    color: rgba(106, 106, 106, 1);
+}
+
+.klips h1 {
+    color: rgba(255, 71, 129, 1);
+}
+
+.reports h1 {
+    color: rgba(128, 213, 227, 1);
+}
+
+.photo h1 {
+    color: rgba(188, 166, 151, 1);
+}
+
+.imij {
+    background-image: url('/src/img/one.png');
+}
+
+.klips {
+    background-image: url('/src/img/two.png');
+}
+
+.reports {
+    background-image: url('/src/img/three.png');
+}
+
+.photo {
+    background-image: url('/src/img/four.jpg');
+}
+
+.cases-content {
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.imij .cases-content {
+    
+}
+
+.klips .cases-content {
+    background-color: rgba(125, 53, 70, 0.8);
+}
+
+.reports .cases-content {
+    background-color: rgba(36, 83, 112, 0.8);
+}
+
+.photo .cases-content {
+    background-color: rgba(34, 48, 42, 0.8);
+}
+
+.case-button { /*анимации кнопок*/ 
+    height: 80px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform 2s ease, background-color 2s ease;
+}
+
+.case-button:hover {
+    transform: scale(1.1); /* Плавное увеличение */
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.imij .case-button {
+    background-color: rgba(106, 106, 106, 1) !important;
+}
+
+.imij .case-button:hover {
+    background-color: rgba(150, 150, 150, 1) !important; /* Более светлый цвет при наведении */
+}
+
+.klips .case-button {
+    background-color: rgba(255, 71, 129, 1) !important;
+}
+
+.klips .case-button:hover {
+    background-color: rgba(255, 100, 150, 1) !important; /* Более светлый цвет при наведении */
+}
+
+.reports .case-button {
+    background-color: rgba(128, 213, 227, 1) !important;
+}
+
+.reports .case-button:hover {
+    background-color: rgba(170, 220, 230, 1) !important; /* Более светлый цвет при наведении */
+}
+
+.photo .case-button {
+    background-color: rgba(188, 166, 151, 1) !important;
+}
+
+.photo .case-button:hover {
+    background-color: rgba(210, 190, 170, 1) !important; /* Более светлый цвет при наведении */
+}
+
+.case-button a {
+    font-size: 30px;
+}
+
 
 /*Шапка*/
 .navbar {
-    background-color: #1a1a1a;
+    background-color: #161616;
 }
 
 .navbar-nav .nav-link {
     color: white;
     font-size: 18px;
+    margin-right: 10px;
 }
 
 .nav-link:hover {
-    color: #eaa03d;
+    color: #ffa834;/*цвет*/
 }
 
+.navbar ul li a.active {
+    color: #FFA834; /*цвет*/
+  }
+
 .btn-custom{
-    background-color: #f9c74f;
+    background-color: #FFA834; /*цвет*/
     color: #1a1a1a;
     border-radius: 30px;
     transition: background-color 0.3s;
@@ -166,6 +310,13 @@ a:hover {
     color: #1a1a1a ;
     text-decoration: none;
 }
+
+.navbar-buttons .active-button {
+    background-color: black;
+    color: #eaa03d;
+}
+
+
 
 
 /* Work */
@@ -558,4 +709,3 @@ a:hover {
 .form-control::-ms-input-placeholder {
     color: #575757;
 }
-
