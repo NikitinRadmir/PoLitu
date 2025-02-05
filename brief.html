@@ -15,7 +15,7 @@
             <div class="navbar-collapse justify-content-end col-7" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Главная</a>
+                        <a class="nav-link" href="index.html">Главная</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Портфолио</a>
@@ -37,11 +37,11 @@
 </header>
 <body>
 
-<div class="application-form">
-        <section class="contact-info mb-4 justify-content-center">
+<div class="application-form pt-5">
+        <section class="contact-info mb-4 justify-content-center pt-4">
             <form id="application-form">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="1. Фамилия Имя Отчество" required>
+                    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="1. Имя" required>
                 </div>
                 <div class="form-group">
                     <input type="tel" class="form-control" id="phone" name="phone" placeholder="2. Телефон" required>
@@ -49,8 +49,29 @@
                 <div class="form-group">
                     <input type="email" class="form-control" id="email" name="email" placeholder="3. Электронная почта" required>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary col-5">Оставить заявку</button>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="todo" name="todo" placeholder="4. Что требуется сделать" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="company" name="company" placeholder="5. Расскажите о компании или продукте" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="audience" name="audience" placeholder="6. Расскажите о целевой аудитории" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="channel" name="channel" placeholder="7. Расскажите про канал коммуникации" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="time" name="time" placeholder="8. Требуемый хронометраж" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="date" name="date" onfocus="(this.type='date')" onblur="(this.value == '') ? this.type='text' : this.type='date'" placeholder="9. К какому сроку нужно сдать проект" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="budget" name="budget" placeholder="10. Примерный бюджет проекта" required>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <button type="submit" class="btn btn-primary col-5 btn-send">Отправить</button>
                 </div>
             </form>
             
