@@ -12,23 +12,26 @@
 <header>
     <nav class="navbar navbar-expand">
         <div class="container-fluid">
-            <div class="navbar-collapse justify-content-end col-7" id="navbarNav">
+            <div class="navbar-collapse justify-content-end col-8 col-xl-7" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <img src="src/img/logo.png">
+                    </li>
+                    <li class="nav-item p-d-flex">
                         <a class="nav-link active" href="index.html">Главная</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-d-flex">
                         <a class="nav-link" href="portfolio.html">Портфолио</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-d-flex">
                         <a class="nav-link" href="#">Контакты</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-d-flex">
                         <a class="nav-link" href="#">О нас</a>
                     </li>
                 </ul>
             </div>
-            <div class="navbar-buttons d-flex justify-content-start col-5">
+            <div class="navbar-buttons d-flex justify-content-start col-4 col-xl-5">
                 <button class="btn btn-custom mr-2"><a href="#">Оставить заявку</a></button>
                 <button class="btn btn-custom"><a href="brief.html">Заполнить бриф</a></button>
             </div>
@@ -36,13 +39,47 @@
     </nav>
 </header>
 <body>
+    <button id="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sliding menu -->
+    <div id="slide-menu" class="slide-menu" style="padding-top: 14px;">
+        <ul class="navbar-nav flex-column">
+            <li class="nav-item-menu">
+                <img src="src/img/logo.png" alt="Logo" class="menu-logo">
+            </li>
+            <li class="nav-item-menu p-d-flex active border-b">
+                <a class="nav-link active" href="index.html" style="font-size: 25px !important;">Главная</a>
+            </li>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="portfolio.html" style="font-size: 25px !important;">Портфолио</a>
+            </li>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="#" style="font-size: 25px !important;">Контакты</a>
+            </li>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="#" style="font-size: 25px !important;">О нас</a>
+            </li>
+            <li class="nav-item-menu mt-5">
+                <button class="btn btn-custom mr-2" style="font-size: 25px !important;"><a href="#">Оставить заявку</a></button>
+            </li>
+            <li class="nav-item-menu">
+                <button class="btn btn-custom" style="font-size: 25px !important;"><a href="brief.html">Заполнить бриф</a></button>
+            </li>
+        </ul>
+    </div>
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+    <script src="js/script.js"></script>
+
 
     <!-- main-video -->
     <div class="video-container">
         <div class="black-top"></div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 text-center"> <!--animation-->>
+                <div class="col-md-12 text-center"> 
                     <h1 class="display-3 text-white animate__animated animate__fadeInDown">ПОЛАЙТУ</h1>
                     <h2 class="display-4 text-white animate__animated animate__fadeInDown">ВИДЕО ПРОДАКШН</h2>
                     <p class="lead text-white mb-5 animate__animated animate__fadeInDown animate__delay-1s">Простые и яркие решения любых задач</p>
@@ -50,13 +87,12 @@
                 </div>
             </div>
         </div>
-    
+
         <video autoplay muted loop id="myVideo">
             <source src="src/video/video.mp4" type="video/mp4">
         </video>
         <div class="black-bottom"></div>
     </div>
-    
 
     <!-- about-us -->
     <section class="container about-us"> <!--animation-->
@@ -90,65 +126,68 @@
     </section>
 
     <!-- Cases -->
-    <section class="imij">
-        <div class="cases-content col-5 offset-7 text-center row">
-            <h1 class="align-self-center col-12 pt-5 mt-5">Имиджевые и рекламные ролики</h1>
-            <button class="btn btn-custom case-button align-self-end col-6 offset-3">
-                <a>Открыть раздел</a>
-            </button>
+    <section class="imij mt-5">
+        <div class="cases-content col-12 col-md-5 offset-md-7 text-center row">
+            <h1 id="imij-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Имиджевые и рекламные ролики</h1>
+            <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
         </div>
     </section>
-
-
+    
     <section class="klips">
-        <div class="cases-content col-5 text-center row">
-            <h1 class="align-self-center col-12 pt-5 mt-5">Клипы</h1>
-            <button class="btn btn-custom case-button align-self-end col-6 offset-3"><a>Открыть раздел</a></button>
+        <div class="cases-content col-12 col-md-5 text-center row">
+            <h1 id="klips-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Клипы</h1>
+            <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
         </div>
     </section>
-
-
+    
     <section class="reports">
-        <div class="cases-content col-5 text-center row">
-            <h1 class="align-self-center col-12 pt-5 mt-5">Репортажи</h1>
-            <button class="btn btn-custom case-button align-self-end col-6 offset-3"><a>Открыть раздел</a></button>
+        <div class="cases-content col-12 col-md-5 offset-md-7 text-center row">
+            <h1 id="reports-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Репортажи</h1>
+            <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
         </div>
     </section>
-
-
+    
     <section class="photo">
-        <div class="cases-content col-5 text-center row">
-            <h1 class="align-self-center col-12 pt-5 mt-5">Фото-<br>съёмка</h1>
-            <button class="btn btn-custom case-button align-self-end col-6 offset-3"><a>Открыть раздел</a></button>
+        <div class="cases-content col-12 col-md-5 text-center row">
+            <h1 id="photo-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Фото-<br>съёмка</h1>
+            <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
         </div>
     </section>
+    
+    <section class="social">
+        <div class="cases-content col-12 col-md-5 offset-md-7 text-center row">
+            <h1 id="social-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Видео для <br>соц. сетей</h1>
+            <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
+        </div>
+    </section>
+    
 
 
     <!-- How we work -->
     <div class="work-container wow animate__fadeIn" data-wow-duration="1.5s">
         <div class="work-text">Как мы работаем</div>
-        <div class="row">
-          <div class="work col-md-4 text-center">
+        <div class="row row-cols-1 row-cols-lg-3 justify-content-center">
+          <div class="work col-7 col-lg-4 text-center yellow-border">
             <h2>Пре-продакшн</h2>
             <ul class="list-unstyled">
-              <li>Вы оставляете заявку</li>
-              <li>Мы готовим варианты реализации</li>
-              <li>Встречаемся для обсуждения деталей</li>
-              <li><span><span class="text-warning">Подписываем договор</span> и переходим к работе</span></li>
+              <li class="p-d-flex"><p>Вы оставляете заявку</p></li>
+              <li class="p-d-flex"><p>Мы готовим варианты реализации</p></li>
+              <li class="p-d-flex"><p>Встречаемся для обсуждения деталей</p></li>
+              <li class="p-d-flex"><p><span class="text-warning">Подписываем договор</span> и переходим к работе</p></li>
             </ul>
           </div>
-          <div class="work col-md-4 text-center">
+          <div class="work col-7 col-lg-4 text-center yellow-border">
             <h2>Продакшн</h2>
             <ul class="list-unstyled">
-              <li><span><span class="text-warning">Собираем команду</span></span></li>
-              <li>Переходим к съемкам</li>
+              <li class="p-d-flex"><p><span class="text-warning">Собираем команду</span></p></li>
+              <li class="p-d-flex"><p>Переходим к съемкам</p></li>
             </ul>
           </div>
-          <div class="work col-md-4 text-center">
+          <div class="work col-7 col-lg-4 text-center">
             <h2>Пост-продакшн</h2>
             <ul class="list-unstyled">
-              <li>Монтируем проект, добавляем графику, завершаем проект</li>
-              <li><span>Вносим <span class="text-warning">до 3 бесплатных</span> правок с вашей стороны</span></li>
+              <li class="p-d-flex"><p>Монтируем проект, добавляем графику, завершаем проект</p></li>
+              <li class="p-d-flex"><p>Вносим <span class="text-warning">до 3 бесплатных</span> правок с вашей стороны</p></li>
             </ul>
           </div>
         </div>
@@ -226,76 +265,85 @@
         <div class="review-text">
             <h1 class="text-center my-4">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h1>
         </div>
-        <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+        <div id="testimonials-carousel" class="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#testimonials-carousel" data-slide-to="1"></li>
                 <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+                <li data-target="#testimonials-carousel" data-slide-to="3"></li>
+                <li data-target="#testimonials-carousel" data-slide-to="4"></li>
+                <li data-target="#testimonials-carousel" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="review-wrapper d-flex justify-content-center">
                         <!-- Первый отзыв -->
-                        <div class="review">
+                        <div class="row review col-12 col-sm-10 col-xl-5" id="review-1">
                             <img src="src/img/i.webp" alt="Client 1">
-                            <div class="review-content">
+                            <div class="review-content col-8">
                                 <h5>Иванов Иван Иванович</h5>
                                 <p class="reviewer-position">Генеральный директор ООО "Пример"</p>
-                                <p>Отличная работа! Команда проявила высокий профессионализм и ответственность.</p>
+                                <p class="review-p-2">Отличная работа! Команда проявила высокий профессионализм и ответственность.</p>
                             </div>
+                            <p class="hiden">Отличная работа! Команда проявила высокий профессионализм и ответственность.</p>
                         </div>
                         <!-- Второй отзыв -->
-                        <div class="review">
+                        <div class="row review col-12 col-sm-10 col-xl-5" id="review-2">
                             <img src="src/img/i.webp" alt="Client 2">
-                            <div class="review-content">
+                            <div class="review-content col-8">
                                 <h5>Петрова Анна Сергеевна</h5>
                                 <p class="reviewer-position">Директор по маркетингу ООО "Пример"</p>
-                                <p>Мы остались очень довольны результатом работы над нашим проектом.</p>
+                                <p class="review-p-2">Мы остались очень довольны результатом работы над нашим проектом.</p>
                             </div>
+                            <p class="hiden">Мы остались очень довольны результатом работы над нашим проектом.</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="review-wrapper d-flex justify-content-center">
                         <!-- Третий отзыв -->
-                        <div class="review">
+                        <div class="row review col-12 col-sm-10 col-xl-5" id="review-3">
                             <img src="src/img/i.webp" alt="Client 3">
-                            <div class="review-content">
+                            <div class="review-content col-8">
                                 <h5>Сидоров Петр Викторович</h5>
                                 <p class="reviewer-position">CEO ООО "Пример"</p>
-                                <p>Сотрудничество с вашей командой было очень плодотворным и эффективным.</p>
+                                <p class="review-p-2">Сотрудничество с вашей командой было очень плодотворным и эффективным.</p>
                             </div>
+                            <p class="hiden">Сотрудничество с вашей командой было очень плодотворным и эффективным.</p>
                         </div>
                         <!-- Четвертый отзыв -->
-                        <div class="review">
+                        <div class="row review col-12 col-sm-10 col-xl-5" id="review-4">
                             <img src="src/img/i.webp" alt="Client 4">
-                            <div class="review-content">
+                            <div class="review-content col-8">
                                 <h5>Кузнецова Елена Владимировна</h5>
                                 <p class="reviewer-position">Менеджер по продажам ООО "Пример"</p>
-                                <p>Ваша команда всегда была на связи и оперативно решала все возникающие вопросы.</p>
+                                <p class="review-p-2">Ваша команда всегда была на связи и оперативно решала все возникающие вопросы.</p>
                             </div>
+                            <p class="hiden">Ваша команда всегда была на связи и оперативно решала все возникающие вопросы.</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="review-wrapper d-flex justify-content-center">
                         <!-- Пятый отзыв -->
-                        <div class="review">
+                        <div class="row review col-12 col-sm-10 col-xl-5" id="review-5">
                             <img src="src/img/i.webp" alt="Client 5">
-                            <div class="review-content">
-                                <h5>Иванов Иван Иванович</h5>
+                            <div class="review-content col-8">
+                                <h5>Николаев Артур Денисович</h5>
                                 <p class="reviewer-position">Генеральный директор ООО "Пример"</p>
-                                <p>Отличная работа! Команда проявила высокий профессионализм и ответственность.</p>
+                                <p class="review-p-2">Отличная работа! Команда проявила высокий профессионализм и ответственность.</p>
                             </div>
+                            <p class="hiden">Отличная работа! Команда проявила высокий профессионализм и ответственность.</p>
                         </div>
                         <!-- Шестой отзыв -->
-                        <div class="review">
+                        <div class="row review col-12 col-sm-10 col-xl-5" id="review-6">
                             <img src="src/img/i.webp" alt="Client 6">
-                            <div class="review-content">
-                                <h5>Петрова Анна Сергеевна</h5>
+                            <div class="review-content col-8">
+                                <h5>Юсупова Анна Сергеевна</h5>
                                 <p class="reviewer-position">Директор по маркетингу ООО "Пример"</p>
-                                <p>Мы остались очень довольны результатом работы над нашим проектом.</p>
+                                <p class="review-p-2">Мы остались очень довольны результатом работы над нашим проектом.</p>
                             </div>
+                            <p class="hiden col-12">Мы остались очень довольны результатом работы над нашим проектом.</p>
                         </div>
                     </div>
                 </div>
@@ -318,11 +366,6 @@
 
 
 
-
-
-
-
-
     
 
     <div class="application-form">
@@ -330,32 +373,34 @@
         <section class="form-substr mb-4">
             <p>Хотите получить консультацию, уточнить стоимость или заказать ролик? Оставьте заявку и мы свяжемся с вами:</p>
         </section>
-        <section class="contact-info mb-4 justify-content-center">
-            <div class="text-center mr-5">
+        <section class="row row-cols-1 row-cols-lg-2 contact-info mb-4 justify-content-center">
+            <div class="col-12 col-lg-6 pr-4 mb-4 mb-lg-0">
                 <p id="form-num">+7 (000) 000-00-00</p>
                 <p id="form-mail">pochta@gmail.com</p>
             </div>
-            <form id="application-form">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="1. Фамилия Имя Отчество" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="2. Телефон" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="3. Электронная почта" required>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary col-5">Оставить заявку</button>
-                </div>
-                <div class="form-group">
-                    <p class="privacy">Нажимая кнопку "Оставить заявку", Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.</p>
+            <form id="application-form" class="col-12 col-lg-6 row">
+                <div class="row row-cols-1 col-10 col-sm-8 col-lg-7 offset-1 offset-sm-2 offset-lg-0 form-inner">
+                    <div class="form-group justify-content-center">
+                        <input type="text" class="form-controle" id="fullname" name="fullname" placeholder="1. Фамилия Имя Отчество" required>
+                    </div>
+                    <div class="form-group justify-content-center">
+                        <input type="tel" class="form-controle" id="phone" name="phone" placeholder="2. Телефон" required>
+                    </div>
+                    <div class="form-group justify-content-center">
+                        <input type="email" class="form-controle" id="email" name="email" placeholder="3. Электронная почта" required>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary col-8 col-sm-6">Оставить<br>заявку</button>
+                    </div>
+                    <div class="form-group">
+                        <p class="privacy">Нажимая кнопку "Оставить заявку", Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.</p>
+                    </div>
                 </div>
             </form>
             
         </section>
     </div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         new WOW().init();

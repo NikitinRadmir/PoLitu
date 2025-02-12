@@ -14,7 +14,7 @@ body {
     height: 750px; 
     margin: 0 auto;
     overflow: hidden; 
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 #myVideo {
@@ -89,10 +89,10 @@ body {
 
 /*Коротко о нас*/
 .section-title {
-    color: #ffa834;/*цвет*/
+    color: #ffa834;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    font-weight: 600;/*текст*/
+    font-weight: 600;
 }
 
 .about-us-content {
@@ -105,7 +105,7 @@ body {
 }
 
 .feature h3 {
-    color: #FFA834;/*цвет*/
+    color: #ffa834;
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -113,7 +113,7 @@ body {
 .feature-icon {
     width: 100px;
     height: 100px;
-    background-color: #FFA834;/*цвет*/
+    background-color: #FFA834;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -130,7 +130,6 @@ body {
 .about-icon {
     color: #1a1a1a;
 }
-
 .about-us {
     opacity: 0;
     animation: fadeIn 2s forwards;
@@ -151,24 +150,60 @@ body {
 
 
 /*Кейсы*/
-.imij, .klips,
-.reports, .photo {
+.cases-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.klips:hover .cases-content,
+.photo:hover .cases-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.klips .cases-content,
+.photo .cases-content {
+    transform: translateX(-50%);
+}
+
+.imij:hover .cases-content,
+.reports:hover .cases-content,
+.social:hover .cases-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.imij .cases-content,
+.reports .cases-content,
+.social .cases-content {
+    transform: translateX(50%);
+}
+
+.imij, .klips, .reports, .photo, .social {
     margin: 20px 0px;
     width: 100%;
     height: 800px;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: filter 0.5s ease; 
+    filter: grayscale(100%); 
 }
 
-.imij h1, .klips h1,
-.reports h1, .photo h1 {
+.imij:hover, .klips:hover, .reports:hover, .photo:hover, .social:hover {
+    filter: grayscale(0%); 
+}
+
+.klips h1, .reports h1, 
+.photo h1 {
     font-size: 100px;
     font-weight: 700;
 }
 
 .imij h1 {
-    color: rgba(106, 106, 106, 1);
+    font-size: 70px;
+    font-weight: 600;
+    color: rgba(15, 51, 78, 1);
 }
 
 .klips h1 {
@@ -176,19 +211,26 @@ body {
 }
 
 .reports h1 {
-    color: rgba(128, 213, 227, 1);
+    color: rgba(72, 255, 154, 1);
 }
 
 .photo h1 {
     color: rgba(188, 166, 151, 1);
 }
 
+.social h1 {
+    color: rgba(103, 65, 53, 1);
+    font-weight: 600;
+    font-size: 80px;
+}
+
 .imij {
-    background-image: url('/src/img/one.png');
+    background-image: url('/src/img/one_new.jpg');
+    background-size: 100% 100%;
 }
 
 .klips {
-    background-image: url('/src/img/two.png');
+    background-image: url('/src/img/two_new.png');
 }
 
 .reports {
@@ -199,13 +241,19 @@ body {
     background-image: url('/src/img/four.jpg');
 }
 
+.social {
+    background-image: url('/src/img/five_new.png');
+    background-size: 100% 100%;
+    height: 700px;
+}
+
 .cases-content {
     height: 100%;
     padding-bottom: 100px;
 }
 
 .imij .cases-content {
-    
+    background-color: rgba(219, 224, 230, 0.8);
 }
 
 .klips .cases-content {
@@ -213,34 +261,40 @@ body {
 }
 
 .reports .cases-content {
-    background-color: rgba(36, 83, 112, 0.8);
+    background-color: rgba(0, 112, 50, 0.5);
 }
 
 .photo .cases-content {
     background-color: rgba(34, 48, 42, 0.8);
 }
 
-.case-button { /*анимации кнопок*/ 
+.social .cases-content {
+    background-color: rgba(255, 152, 121, 0.7);
+}
+
+.case-button { 
     height: 80px;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
+    transform: scale(1);
     transition: transform 2s ease, background-color 2s ease;
+
 }
 
 .case-button:hover {
-    transform: scale(1.1); /* Плавное увеличение */
+    transform: scale(1.1);
     transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
 .imij .case-button {
-    background-color: rgba(106, 106, 106, 1) !important;
+    background-color: rgba(15, 51, 78, 1) !important;
 }
 
 .imij .case-button:hover {
-    background-color: rgba(150, 150, 150, 1) !important; /* Более светлый цвет при наведении */
+    background-color: rgb(28, 113, 177) !important; 
 }
 
 .klips .case-button {
@@ -248,15 +302,15 @@ body {
 }
 
 .klips .case-button:hover {
-    background-color: rgba(255, 100, 150, 1) !important; /* Более светлый цвет при наведении */
+    background-color: rgba(255, 100, 150, 1) !important; 
 }
 
 .reports .case-button {
-    background-color: rgba(128, 213, 227, 1) !important;
+    background-color: rgba(72, 255, 154, 1) !important;
 }
 
 .reports .case-button:hover {
-    background-color: rgba(170, 220, 230, 1) !important; /* Более светлый цвет при наведении */
+    background-color: rgb(20, 254, 125) !important; 
 }
 
 .photo .case-button {
@@ -264,15 +318,37 @@ body {
 }
 
 .photo .case-button:hover {
-    background-color: rgba(210, 190, 170, 1) !important; /* Более светлый цвет при наведении */
+    background-color: rgba(210, 190, 170, 1) !important; 
+}
+
+.social .case-button {
+    background-color: rgba(103, 65, 53, 1);
+}
+
+.social .case-button:hover {
+    background-color: rgb(144, 94, 79);
 }
 
 .case-button a {
     font-size: 30px;
+    color: white !important;
+}
+
+#imij-title, #klips-title, #reports-title, #photo-title, #social-title {
+    transition: opacity 0.5s ease;
 }
 
 
+
+
+
 /*Шапка*/
+/* Existing styles */
+
+a.active {
+    color: #ffa834 !important;
+}
+
 .navbar {
     background-color: #161616;
 }
@@ -284,15 +360,15 @@ body {
 }
 
 .nav-link:hover {
-    color: #ffa834;/*цвет*/
+    color: #ffa834;
 }
 
 .navbar ul li a.active {
-    color: #FFA834; /*цвет*/
-  }
+    color: #ffa834;
+}
 
-.btn-custom{
-    background-color: #FFA834; /*цвет*/
+.btn-custom {
+    background-color: #ffa834;
     color: #1a1a1a;
     border-radius: 30px;
     transition: background-color 0.3s;
@@ -306,14 +382,124 @@ a {
     text-decoration: none;
     color: #1a1a1a;
 }
+
 a:hover {
-    color: #1a1a1a ;
+    color: #1a1a1a;
     text-decoration: none;
 }
 
-.navbar-buttons .active-button {
-    background-color: black;
-    color: #eaa03d;
+.active-button {
+    background-color: black !important;
+    color: #eaa03d !important;
+}
+
+/* New styles for the menu button and sliding menu */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffa834;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.nav-item-menu img {
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+
+.menu-toggle i {
+    color: black;
+    font-size: 24px;
+}
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100%;
+    background-color: #161616;
+    transition: right 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.slide-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-menu .nav-link {
+    color: white;
+    padding: 15px 20px;
+}
+
+.border-b {
+    border-bottom: 1px solid #444444;
+}
+
+.slide-menu .nav-link:hover {
+    background-color: #ffa834;
+    color: black;
+}
+
+.slide-menu .btn-custom {
+    width: calc(100% - 40px);
+    margin: 10px 20px;
+}
+
+.menu-logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Overlay styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar-nav .nav-item:not(:first-child),
+    .navbar-buttons {
+        display: none;
+    }
+
+    .slide-menu.active {
+        right: 0;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+
+    /* Hide the buttons on smaller screens */
+    .navbar-buttons .btn-custom {
+        display: none;
+    }
 }
 
 
@@ -321,30 +507,25 @@ a:hover {
 
 /* Work */
 .work-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 900px; 
+    padding: 50px 20px;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 
 .work-text {
+
     font-weight: 600;
     font-size: 45px;
     color: #FFA834;
     margin-bottom: 70px;
 }
 
-.row {
-    display: flex;
-    align-items: stretch; 
+.work {
+    padding: 20px;
 }
 
-.work {
+.yellow-border {
     border-right: 2px solid #FFA834;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 .col-md-4:last-child {
@@ -354,16 +535,10 @@ a:hover {
 .row h2 {
     color: white;
     margin-bottom: 20px;
-    flex-shrink: 0; 
 }
 
 .list-unstyled {
-    list-style-type: none;
     padding: 0;
-    flex-grow: 1; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .list-unstyled li {
@@ -381,6 +556,16 @@ a:hover {
 .text-warning {
     color: #FFA834;
 }
+
+.p-d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.p-d-flex p {
+    margin: 0px !important;
+}
+
 
 
 
@@ -406,7 +591,6 @@ a:hover {
     overflow: hidden;
     position: relative;
     width: 100%;
-    max-width: 1900px; 
     margin: 20px auto;
 }
 
@@ -444,6 +628,11 @@ a:hover {
 
 /*Reviews*/
 
+
+.carousel {
+    width: 1000px;
+}
+
 .review-container {
     background-color: #202020;
     padding: 20px;
@@ -454,7 +643,6 @@ a:hover {
 }
 
 .review-text-container {
-    width: 100%;
     text-align: center;
     margin-bottom: 20px;
     position: relative;
@@ -475,7 +663,6 @@ a:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    width: 1000px; 
     margin: 0 auto; 
     position: relative; 
 }
@@ -485,8 +672,6 @@ a:hover {
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 40px;
-    width: calc(50% - 25px);
-    max-width: 400px;
     height: 250px;
     display: flex;
     align-items: flex-start;
@@ -531,7 +716,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     z-index: 1;
 }
 
@@ -542,14 +726,6 @@ a:hover {
     width: 20px;
     height: 20px;
     display: inline-block;
-}
-
-.carousel-control-prev {
-    left: calc(50% - 510px); 
-}
-
-.carousel-control-next {
-    right: calc(50% - 510px); 
 }
 
 .carousel-indicators-container {
@@ -578,12 +754,20 @@ a:hover {
     transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
+.carousel-indicators > :nth-child(4),
+.carousel-indicators > :nth-child(5),
+.carousel-indicators > :nth-child(6) {
+    display: none;
+}
+
 .carousel-indicators .active {
     background-color: #FFD700;
     opacity: 1;
 }
 
-
+.hiden {
+    display: none;
+}
 
 
 
@@ -617,8 +801,6 @@ a:hover {
 }
 
 .contact-info {
-    display: flex;
-    justify-content: space-around;
     padding: 0px;
     background-color: #202020;
     border-radius: 5px;
@@ -626,31 +808,27 @@ a:hover {
 
 .contact-info div {
     background-color: #202020;
-    padding: 0px;
     border-radius: 5px;
-    text-align: center;
 }
 
 #form-num {
     color: #ffffff;
     font-size: 24px;
+    text-align: right;
 }
 
 #form-mail {
     color: #FFA834;
     font-size: 24px;
+    text-align: right;
 }
 
 .application-form {
     background-color: #202020;
     padding: 20px;
-
-    width: 100%;
-    margin: 0 auto;
 }
 
 #application-form label {
-    display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -658,7 +836,6 @@ a:hover {
 #application-form input[type="text"],
 #application-form input[type="tel"],
 #application-form input[type="email"] {
-    width: 100%;
     padding: 5px;
     margin-bottom: 5px;
     border: 1px solid #202020;
@@ -668,8 +845,6 @@ a:hover {
 }
 
 #application-form button {
-    display: block;
-
     padding: 5px;
     background-color: #ffa834;
     color: #202020;
@@ -687,25 +862,261 @@ a:hover {
     background-color: #202020;
     border-radius: 5px;
     font-size: 12px !important;
+    text-align: center;
 }
 
-.form-group {
-    width: 350px;
+.form-group input {
+    width: 100%;
 }
 
-.form-control {
+.form-controle {
     background-color: #161616;
     color: #575757;
     height: 45px;
 }
-.form-control::placeholder {
+.form-controle::placeholder {
     color: #575757;
     opacity: 1; 
     font-weight: 600;
 }
-.form-control:-ms-input-placeholder {
+.form-controle:-ms-input-placeholder {
     color: #575757;
 }
-.form-control::-ms-input-placeholder {
+.form-controle::-ms-input-placeholder {
     color: #575757;
+}
+
+.form-inner {
+    padding: 0px 15px;
+}
+
+@media (max-width: 1400px) {
+    .reports h1 {
+        font-size: 80px;
+    }
+
+    .imij, .klips,
+    .reports, .photo {
+        height: 700px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .case-button a {
+        font-size: 20px;
+    }
+
+    .case-button {
+        height: 70px;
+    }
+}
+
+@media (max-width:1200px) {
+    #review-2, #review-4,
+    #review-6 {
+        display: none;
+    }
+
+    .carousel {
+        width: 700px;
+    }
+
+    #review-2-h, #review-4-h,
+    #review-6-h {
+        display: flex;
+    }
+
+}
+
+
+@media (max-width: 1162px) {
+    .imij h1 {
+        font-size: 50px;
+    }
+
+    .reports h1 {
+        font-size: 60px;
+    }
+
+    
+}
+
+@media (max-width: 1020px) {
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }  
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        display: noned;
+    }
+
+    .klips h1 {
+        font-size: 80px;
+    }
+
+    .reports h1 {
+        font-size: 52px;
+    }
+
+    .case-button {
+        height: 60px;
+    }
+
+    .photo h1 {
+        font-size: 70px;
+    }
+
+    .imij, .klips,
+    .reports, .photo {
+        height: 600px;
+    }
+
+    .yellow-border {
+        border: none;
+    }
+
+    .carousel {
+        width: 550px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    #form-mail, #form-num {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .display-3 {
+        font-size: 100px;
+    }
+
+    .imij .cases-content {
+        background-color: rgba(106, 106, 106, 0.8);
+    }
+
+    .imij h1 {
+        color: white;
+    }
+
+    .cases-content.row {
+        margin: 0px;
+        padding: 50px 0px 100px 0px;
+    }
+
+    .klips h1, .reports h1, 
+    .photo h1 {
+        font-size: 100px;
+    }
+
+    .list-unstyled li {
+        height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-3 {
+        font-size: 70px;
+    }
+
+    .display-4 {
+        font-size: 26px;
+    }
+
+    .lead {
+        font-size: 20px;
+    }
+
+    .reports h1 {
+        font-size: 62px;
+    }
+
+    .photo h1 {
+        font-size: 80px;
+    }
+
+    .carousel {
+        width: 400px;
+    }
+
+    .review-text h1 {
+        font-size: 36px;
+    }
+
+    .review-content p {
+        font-size: 12px;
+    }
+    
+    .review {
+        height: 260px;
+    }
+
+    .review-p-2 {
+        display: none;
+    }
+    
+    .hiden {
+        display: inline;
+    }
+
+    .form-inner {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .carousel {
+        width: 300px;
+    }
+
+    .application-form h1 {
+        font-size: 30px;
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (max-width: 370px) {
+    .display-3 {
+        font-size: 60px;
+    }
+
+    .imij h1 {
+        font-size: 48px;
+    }
+
+    .klips h1 {
+        font-size: 80px;
+    }
+
+    .reports h1 {
+        font-size: 52px;
+    }
+
+    .list-unstyled li p {
+        font-size: 12px;
+    }
+
+    .work h2 {
+        font-size: 22px;
+    }
+
+    .list-unstyled li {
+        height: 60px;
+    }
+
+    .review-text h1 {
+        font-size: 32px;
+    }
+
+    #fullname, #phone,
+    #email {
+        font-size: 12px !important;
+    }
+
 }

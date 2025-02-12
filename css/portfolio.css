@@ -27,9 +27,6 @@ section {
     color: rgba(188, 166, 151, 1);
 }
 
-
-
-
 .photo-container {
     width: 100%;  
     overflow: hidden; 
@@ -38,7 +35,7 @@ section {
 
 .photo-container img {
     width: 100%; 
-    height: 1080px; 
+    height: 700px; 
     display: block; 
     object-fit: cover; 
 }
@@ -62,4 +59,37 @@ section {
 .portfolio-btn:hover {
     background-color: #eaa03d;
     border-color: #eaa03d;
+}
+
+@media (max-width: 768px) {
+    .imij-p h1 {
+        font-size: 30px;
+    }
+
+    .photo-container img {
+        height: 500px;
+    }    
+}
+
+@media (max-width: 576px) {
+    .imij-p h1 {
+        font-size: 20px;
+    }
+
+    .photo-container img {
+        height: 300px;
+    }  
+
+    .content p, .content a {
+        font-size: 12px;
+    }
+
+    #budget, #date,
+    #time, #channel,
+    #audience, #company,
+    #email, #phone,
+    #fullname, #todo {
+        font-size: 12px !important;
+    }
+
 }
