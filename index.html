@@ -15,10 +15,10 @@
             <div class="navbar-collapse justify-content-end col-8 col-xl-7" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <img src="src/img/logo.png">
+                        <img src="src/img/main/logo.png">
                     </li>
-                    <li class="nav-item p-d-flex active">
-                        <a class="nav-link" href="index.html">Главная</a>
+                    <li class="nav-item p-d-flex">
+                        <a class="nav-link active" href="index.html">Главная</a>
                     </li>
                     <li class="nav-item p-d-flex">
                         <a class="nav-link" href="portfolio.html">Портфолио</a>
@@ -32,13 +32,46 @@
                 </ul>
             </div>
             <div class="navbar-buttons d-flex justify-content-start col-4 col-xl-5">
-                <button class="btn btn-custom mr-2">Оставить заявку</button>
-                <button class="btn btn-custom">Заполнить бриф</button>
+                <button class="btn btn-custom mr-2"><a href="#">Оставить заявку</a></button>
+                <button class="btn btn-custom"><a href="brief.html">Заполнить бриф</a></button>
             </div>
         </div>
     </nav>
 </header>
 <body>
+    <button id="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sliding menu -->
+    <div id="slide-menu" class="slide-menu" style="padding-top: 14px;">
+        <ul class="navbar-nav flex-column">
+            <li class="nav-item-menu">
+                <img src="src/img/main/logo.png" alt="Logo" class="menu-logo">
+            </li>
+            <li class="nav-item-menu p-d-flex active border-b">
+                <a class="nav-link active" href="index.html" style="font-size: 25px !important;">Главная</a>
+            </li>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="portfolio.html" style="font-size: 25px !important;">Портфолио</a>
+            </li>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="#" style="font-size: 25px !important;">Контакты</a>
+            </li>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="#" style="font-size: 25px !important;">О нас</a>
+            </li>
+            <li class="nav-item-menu mt-5">
+                <button class="btn btn-custom mr-2" style="font-size: 25px !important;"><a href="#">Оставить заявку</a></button>
+            </li>
+            <li class="nav-item-menu">
+                <button class="btn btn-custom" style="font-size: 25px !important;"><a href="brief.html">Заполнить бриф</a></button>
+            </li>
+        </ul>
+    </div>
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
 
     <!-- main-video -->
     <div class="video-container">
@@ -94,34 +127,39 @@
     <!-- Cases -->
     <section class="imij mt-5">
         <div class="cases-content col-12 col-md-5 offset-md-7 text-center row">
-            <h1 class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Имиджевые и рекламные ролики</h1>
+            <h1 id="imij-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Имиджевые и рекламные ролики</h1>
             <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
         </div>
     </section>
-
-
+    
     <section class="klips">
         <div class="cases-content col-12 col-md-5 text-center row">
-            <h1 class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Клипы</h1>
+            <h1 id="klips-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Клипы</h1>
             <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
         </div>
     </section>
-
-
+    
     <section class="reports">
-        <div class="cases-content col-12 col-md-5 text-center row">
-            <h1 class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Репортажи</h1>
+        <div class="cases-content col-12 col-md-5 offset-md-7 text-center row">
+            <h1 id="reports-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Репортажи</h1>
             <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
         </div>
     </section>
-
-
+    
     <section class="photo">
         <div class="cases-content col-12 col-md-5 text-center row">
-            <h1 class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Фото-<br>съёмка</h1>
+            <h1 id="photo-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Фото-<br>съёмка</h1>
             <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
         </div>
     </section>
+    
+    <section class="social">
+        <div class="cases-content col-12 col-md-5 offset-md-7 text-center row">
+            <h1 id="social-title" class="align-self-center col-12 pt-5 mt-5 mb-sm-5">Видео для <br>соц. сетей</h1>
+            <button class="btn btn-custom case-button mt-sm-5 align-self-xl-end col-8 offset-2 col-lg-6 offset-lg-3"><a>Открыть раздел</a></button>
+        </div>
+    </section>
+    
 
 
     <!-- How we work -->
@@ -139,14 +177,14 @@
           </div>
           <div class="work col-7 col-lg-4 text-center yellow-border">
             <h2>Продакшн</h2>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled mtt-rem1">
               <li class="p-d-flex"><p><span class="text-warning">Собираем команду</span></p></li>
               <li class="p-d-flex"><p>Переходим к съемкам</p></li>
             </ul>
           </div>
           <div class="work col-7 col-lg-4 text-center">
             <h2>Пост-продакшн</h2>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled mtt-rem2">
               <li class="p-d-flex"><p>Монтируем проект, добавляем графику, завершаем проект</p></li>
               <li class="p-d-flex"><p>Вносим <span class="text-warning">до 3 бесплатных</span> правок с вашей стороны</p></li>
             </ul>
@@ -160,57 +198,57 @@
         <div class="client-carousel">
             <div class="client-carousel-inner">
                 <div class="client-carousel-item">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
                     <!-- Добавьте больше изображений по мере необходимости -->
                 </div>
                 <div class="client-carousel-item">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
-                    <img src="src/img/service.png" alt="Client 1">
-                    <img src="src/img/tat-expo.png" alt="Client 2">
-                    <img src="src/img/rosreestr.png" alt="Client 3">
-                    <img src="src/img/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
+                    <img src="src/img/companies/service.png" alt="Client 1">
+                    <img src="src/img/companies/tat-expo.png" alt="Client 2">
+                    <img src="src/img/companies/rosreestr.png" alt="Client 3">
+                    <img src="src/img/companies/mediatech.png" alt="Client 4">
                     <!-- Повторите изображения для бесконечного эффекта -->
                 </div>
             </div>
@@ -240,7 +278,7 @@
                     <div class="review-wrapper d-flex justify-content-center">
                         <!-- Первый отзыв -->
                         <div class="row review col-12 col-sm-10 col-xl-5" id="review-1">
-                            <img src="src/img/i.webp" alt="Client 1">
+                            <img src="src/img/main/i.webp" alt="Client 1">
                             <div class="review-content col-8">
                                 <h5>Иванов Иван Иванович</h5>
                                 <p class="reviewer-position">Генеральный директор ООО "Пример"</p>
@@ -250,7 +288,7 @@
                         </div>
                         <!-- Второй отзыв -->
                         <div class="row review col-12 col-sm-10 col-xl-5" id="review-2">
-                            <img src="src/img/i.webp" alt="Client 2">
+                            <img src="src/img/main/i.webp" alt="Client 2">
                             <div class="review-content col-8">
                                 <h5>Петрова Анна Сергеевна</h5>
                                 <p class="reviewer-position">Директор по маркетингу ООО "Пример"</p>
@@ -264,7 +302,7 @@
                     <div class="review-wrapper d-flex justify-content-center">
                         <!-- Третий отзыв -->
                         <div class="row review col-12 col-sm-10 col-xl-5" id="review-3">
-                            <img src="src/img/i.webp" alt="Client 3">
+                            <img src="src/img/main/i.webp" alt="Client 3">
                             <div class="review-content col-8">
                                 <h5>Сидоров Петр Викторович</h5>
                                 <p class="reviewer-position">CEO ООО "Пример"</p>
@@ -274,7 +312,7 @@
                         </div>
                         <!-- Четвертый отзыв -->
                         <div class="row review col-12 col-sm-10 col-xl-5" id="review-4">
-                            <img src="src/img/i.webp" alt="Client 4">
+                            <img src="src/img/main/i.webp" alt="Client 4">
                             <div class="review-content col-8">
                                 <h5>Кузнецова Елена Владимировна</h5>
                                 <p class="reviewer-position">Менеджер по продажам ООО "Пример"</p>
@@ -288,9 +326,9 @@
                     <div class="review-wrapper d-flex justify-content-center">
                         <!-- Пятый отзыв -->
                         <div class="row review col-12 col-sm-10 col-xl-5" id="review-5">
-                            <img src="src/img/i.webp" alt="Client 5">
+                            <img src="src/img/main/i.webp" alt="Client 5">
                             <div class="review-content col-8">
-                                <h5>Иванов Иван Иванович</h5>
+                                <h5>Николаев Артур Денисович</h5>
                                 <p class="reviewer-position">Генеральный директор ООО "Пример"</p>
                                 <p class="review-p-2">Отличная работа! Команда проявила высокий профессионализм и ответственность.</p>
                             </div>
@@ -298,53 +336,9 @@
                         </div>
                         <!-- Шестой отзыв -->
                         <div class="row review col-12 col-sm-10 col-xl-5" id="review-6">
-                            <img src="src/img/i.webp" alt="Client 6">
+                            <img src="src/img/main/i.webp" alt="Client 6">
                             <div class="review-content col-8">
-                                <h5>Петрова Анна Сергеевна</h5>
-                                <p class="reviewer-position">Директор по маркетингу ООО "Пример"</p>
-                                <p class="review-p-2">Мы остались очень довольны результатом работы над нашим проектом.</p>
-                            </div>
-                            <p class="hiden col-12">Мы остались очень довольны результатом работы над нашим проектом.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="carousel-item">
-                    <div class="review-wrapper d-flex justify-content-center">
-                        <!-- Второй отзыв -->
-                        <div class="row review col-12 col-sm-10 col-xl-5 hiden" id="review-2-h">
-                            <img src="src/img/i.webp" alt="Client 2">
-                            <div class="review-content col-8">
-                                <h5>Петрова Анна Сергеевна</h5>
-                                <p class="reviewer-position">Директор по маркетингу ООО "Пример"</p>
-                                <p class="review-p-2">Мы остались очень довольны результатом работы над нашим проектом.</p>
-                            </div>
-                            <p class="hiden">Мы остались очень довольны результатом работы над нашим проектом.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="review-wrapper d-flex justify-content-center">
-                        <!-- Четвертый отзыв -->
-                        <div class="row review col-12 col-sm-10 col-xl-5 hiden" id="review-4-h">
-                            <img src="src/img/i.webp" alt="Client 4">
-                            <div class="review-content col-8">
-                                <h5>Кузнецова Елена Владимировна</h5>
-                                <p class="reviewer-position">Менеджер по продажам ООО "Пример"</p>
-                                <p class="review-p-2">Ваша команда всегда была на связи и оперативно решала все возникающие вопросы.</p>
-                            </div>
-                            <p class="hiden">Ваша команда всегда была на связи и оперативно решала все возникающие вопросы.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="review-wrapper d-flex justify-content-center">
-                        <!-- Шестой отзыв -->
-                        <div class="row review col-12 col-sm-10 col-xl-5 hiden" id="review-6-h">
-                            <img src="src/img/i.webp" alt="Client 6">
-                            <div class="review-content col-8">
-                                <h5>Петрова Анна Сергеевна</h5>
+                                <h5>Юсупова Анна Сергеевна</h5>
                                 <p class="reviewer-position">Директор по маркетингу ООО "Пример"</p>
                                 <p class="review-p-2">Мы остались очень довольны результатом работы над нашим проектом.</p>
                             </div>
@@ -413,5 +407,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
             <div class="navbar-collapse justify-content-end col-8 col-xl-7" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <img src="src/img/logo.png">
+                        <img src="src/img/main/logo.png">
                     </li>
                     <li class="nav-item p-d-flex">
                         <a class="nav-link" href="index.html">Главная</a>
@@ -32,13 +32,47 @@
                 </ul>
             </div>
             <div class="navbar-buttons d-flex justify-content-start col-4 col-xl-5">
-                <button class="btn btn-custom mr-2">Оставить заявку</button>
-                <button class="btn btn-custom active-button">Заполнить бриф</button>
+                <button class="btn btn-custom mr-2"><a href="">Оставить заявку</a></button>
+                <button class="btn btn-custom active-button"><a href="brief.html" class="active">Заполнить бриф</a></button>
             </div>
         </div>
     </nav>
 </header>
 <body>
+
+    <button id="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sliding menu -->
+    <div id="slide-menu" class="slide-menu" style="padding-top: 14px;">
+        <ul class="navbar-nav flex-column">
+            <li class="nav-item-menu">
+                <img src="src/img/logo.png" alt="Logo" class="menu-logo">
+            </li>
+            <li class="nav-item-menu p-d-flex active border-b">
+                <a class="nav-link" href="index.html" style="font-size: 25px !important;">Главная</a>
+            </li>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="portfolio.html" style="font-size: 25px !important;">Портфолио</a>
+            </li>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="#" style="font-size: 25px !important;">Контакты</a>
+            </li>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="#" style="font-size: 25px !important;">О нас</a>
+            </li>
+            <li class="nav-item-menu mt-5">
+                <button class="btn btn-custom mr-2" style="font-size: 25px !important;">Оставить заявку</button>
+            </li>
+            <li class="nav-item-menu">
+                <button class="btn btn-custom active-button" style="font-size: 25px !important;"><a href="brief.html" class="active">Заполнить бриф</a></button>
+            </li>
+        </ul>
+    </div>
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+    <script src="js/script.js"></script>
 
     <div class="application-form pt-5">
         <section class="contact-info mb-4 justify-content-center pt-4">
@@ -74,7 +108,7 @@
                     <input type="text" class="form-controle" id="budget" name="budget" placeholder="10. Примерный бюджет проекта" required>
                 </div>
                 <div class="d-flex justify-content-center mt-5">
-                    <button type="submit" class="btn btn-primary col-2 btn-send">Отправить</button>
+                    <button type="submit" class="btn btn-primary col-5 col-sm-4 col-md-3 col-lg-2 btn-send">Отправить</button>
                 </div>
             </form>
             
