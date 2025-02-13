@@ -5,6 +5,10 @@ body {
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* Main-video */
 
 
@@ -153,6 +157,10 @@ body {
 .cases-content {
     opacity: 0;
     transition: opacity 0.5s ease-in-out, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title-container {
+    height: 250px;
 }
 
 .imij, .klips, .reports, .photo, .social {

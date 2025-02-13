@@ -2,29 +2,18 @@ section {
     margin-bottom: 40px;
 }
 
+.portfolio-header-container {
+    background-color: black;
+}
+
 .portfolio-header {
     text-align: center;
     padding: 10px 0;
 }
 
-.imij-p .portfolio-header {
-    background-color: rgba(106, 106, 106, 0.5);
-    color: rgba(106, 106, 106, 1);
-}
-
-.klips-p .portfolio-header {
-    background-color: rgba(255, 71, 129, 0.5);
-    color: rgba(255, 71, 129, 1);
-}
-
-.reports-p .portfolio-header {
-    background-color: rgba(128, 213, 227, 0.5);
-    color: rgba(128, 213, 227, 1);
-}
-
-.photo-p .portfolio-header {
-    background-color: rgba(188, 166, 151, 0.5);
-    color: rgba(188, 166, 151, 1);
+.portfolio-header {
+    background-color: rgba(255, 168, 52, 1);
+    color: #202020;
 }
 
 .photo-container {
@@ -43,22 +32,34 @@ section {
 .content {
     background-color: #202020;
     color: white;
-    text-align: center;
-    padding: 50px 20px;
+    padding: 50px 0px;
+}
+
+.content p {
+    font-size: 36px;
+}
+
+.question {
+    display: inline-block;
+    color: #202020;
+    background-color: rgba(255, 168, 52, 1);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .portfolio-btn{
-    background-color: #eaa03d;
-    border-color: #eaa03d;
+    background-color: rgba(255, 168, 52, 1);
+    border-color: rgba(255, 168, 52, 1);
     color: #202020;
     font-weight: bold;
     border-radius: 20px;
     padding: 10px 30px;
+    font-size: 26px;
 }
 
 .portfolio-btn:hover {
-    background-color: #eaa03d;
-    border-color: #eaa03d;
+    background-color: rgba(255, 168, 52, 1);
+    border-color: rgba(255, 168, 52, 1);
 }
 
 @media (max-width: 768px) {
@@ -69,6 +70,14 @@ section {
     .photo-container img {
         height: 500px;
     }    
+
+    .content p {
+        font-size: 26px;
+    }
+
+    .portfolio-btn{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -80,8 +89,12 @@ section {
         height: 300px;
     }  
 
-    .content p, .content a {
-        font-size: 12px;
+    .content p {
+        font-size: 20px;
+    }
+
+    .portfolio-btn {
+        font-size: 16px;
     }
 
     #budget, #date,
@@ -92,4 +105,10 @@ section {
         font-size: 12px !important;
     }
 
+}
+
+@media (max-width: 380px) {
+    .social-p h1 {
+        font-size: 30px;
+    }
 }
