@@ -170,7 +170,7 @@ html {
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    transition: filter 0.5s ease; 
+    transition: filter 2s ease; /*появление цвета!!!!!!!!!!!!*/
     filter: grayscale(100%); 
     overflow: hidden;
 }
