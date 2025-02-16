@@ -3,7 +3,7 @@ section {
 }
 
 .portfolio-header-container {
-    background-color: black;
+    background-color: #ffa834;
 }
 
 .portfolio-header {
@@ -36,15 +36,18 @@ section {
 }
 
 .content p {
-    font-size: 36px;
+    font-size: 25px;
+    font-family: 'Etude Noire Light';
 }
 
 .question {
     display: inline-block;
     color: #202020;
-    background-color: rgba(255, 168, 52, 1);
+    background-color: #ffffff;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    font-size: 36px !important;
+    font-family: 'Etude Noire Medium' !important;
 }
 
 .portfolio-btn{
