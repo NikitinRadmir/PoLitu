@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
             element.style.opacity = '0';
             setTimeout(() => {
                 element.textContent = newText;
-                element.style.fontSize = '40px'; 
+                element.style.fontSize = '30px'; 
                 element.style.opacity = '1';
             }, 500); 
         });

@@ -1,6 +1,36 @@
+/* Подключение шрифта Etude Noire из папки src/fonts */
+@font-face {
+    font-family: 'Etude Noire Medium'; 
+    src: url('/src/fonts/Etude Noire Medium.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Etude Noire Bold'; 
+    src: url('src/fonts/Etude Noire Bold.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Etude Noire Light'; 
+    src: url('/src/fonts/Etude Noire Light.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Etude Noire Regular'; 
+    src: url('src/fonts/Etude Noire Regular.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, a, button, .nav-link, .btn, .case-button a {
+    font-family: 'Etude Noire Medium', sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #202020;
     color: white;
 }
@@ -10,8 +40,6 @@ html {
   }
 
 /* Main-video */
-
-
 .video-container {
     position: relative;
     width: 100%; 
@@ -72,15 +100,16 @@ html {
 }
 
 .display-4 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 0px !important;
+    margin-bottom: 50px !important;
 }
 
 .lead {
+    font-family: "Etude Noire Light", sans-serif;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 .btn-warning {
@@ -88,20 +117,29 @@ html {
     background-color: #FFA834;
     border-color: #FFA834;
     border-radius: 50px;
-    padding: 15px;
+    padding: 10px 70px;
+    line-height: 22px;
+
 }
 
 /*Коротко о нас*/
 .section-title {
     color: #ffa834;
-    font-size: 2.5rem;
+    font-size: 50px;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
+
 .about-us-content {
+    font-family: 'Etude Noire Light', sans-serif;
     margin-top: 40px;
 }
+.custom-span {
+    display: inline-block; 
+    margin-bottom: 10px; 
+}
+
 
 .feature {
     text-align: center;
@@ -109,9 +147,13 @@ html {
 }
 
 .feature h3 {
-    color: #ffa834;
+    color: #ffffff;
     font-size: 1.5rem;
     margin-bottom: 20px;
+}
+
+.feature p {
+    font-family: 'Etude Noire Light';
 }
 
 .feature-icon {
@@ -161,6 +203,8 @@ html {
 
 .title-container {
     height: 250px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .imij, .klips, .reports, .photo, .social {
@@ -170,7 +214,7 @@ html {
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    transition: filter 0.5s ease; 
+    transition: filter 2s ease; /*появление цвета!!!!!!!!!!!!*/
     filter: grayscale(100%); 
     overflow: hidden;
 }
@@ -206,8 +250,8 @@ html {
 }
 
 .klips h1, .reports h1, 
-.photo h1 {
-    font-size: 100px;
+.photo h1, .social {
+    font-size: 70px;
     font-weight: 700;
 }
 
@@ -232,7 +276,7 @@ html {
 .social h1 {
     color: rgba(103, 65, 53, 1);
     font-weight: 600;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .imij {
@@ -289,7 +333,7 @@ html {
     border-radius: 5px;
     transform: scale(1);
     transition: transform 2s ease, background-color 2s ease;
-
+    line-height: 20px !important;
 }
 
 .case-button:hover {
@@ -353,6 +397,10 @@ html {
 /*Шапка*/
 /* Existing styles */
 
+.hiden-logo {
+    display: none;
+}
+
 a.active {
     color: #ffa834 !important;
 }
@@ -371,6 +419,10 @@ a.active {
     color: #ffa834;
 }
 
+.nav-item img {
+    width: 200px;
+}
+
 .navbar ul li a.active {
     color: #ffa834;
 }
@@ -380,6 +432,8 @@ a.active {
     color: #1a1a1a;
     border-radius: 30px;
     transition: background-color 0.3s;
+    line-height: 15px;
+    padding: 5px 10px;
 }
 
 .btn-custom:hover {
@@ -396,15 +450,10 @@ a:hover {
     text-decoration: none;
 }
 
-.active-button {
-    background-color: black !important;
-    color: #eaa03d !important;
-}
-
 /* New styles for the menu button and sliding menu */
 .menu-toggle {
     position: fixed;
-    top: 20px;
+    top: 14px;
     right: 20px;
     background-color: #ffa834;
     border: none;
@@ -440,6 +489,7 @@ a:hover {
     z-index: 999;
     overflow-y: auto;
     padding: 20px;
+    padding-top: 6px !important;
 }
 
 .slide-menu ul {
@@ -473,6 +523,8 @@ a:hover {
     max-width: 100%;
     height: auto;
 }
+
+
 
 /* Overlay styles */
 .overlay {
@@ -527,10 +579,11 @@ a:hover {
 .list-unstyled li {
     background-color: transparent;
     border: 1px solid white;
+    border-radius: 15px;
     padding: 5px; 
     margin-bottom: 15px; 
     text-align: center;
-    height: 60px; 
+    min-height: 60px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -770,13 +823,14 @@ a:hover {
 
 
 .application-form h1 {
-    color: #ffffff;
+    color: #FFA834;
     text-align: center;
     margin-top: 50px;
     font-weight: 600;
 }
 
 .application-form p {
+    font-family: 'Etude Noire Light';
     color: #ffffff;
     font-size: 16px;
 
@@ -803,13 +857,13 @@ a:hover {
 #form-num {
     color: #ffffff;
     font-size: 24px;
-    text-align: right;
+    text-align: center;
 }
 
 #form-mail {
     color: #FFA834;
     font-size: 24px;
-    text-align: right;
+    text-align: center;
 }
 
 .application-form {
@@ -879,6 +933,10 @@ a:hover {
     padding: 0px 15px;
 }
 
+.container-fluid {
+    flex-wrap: wrap !important;
+}
+
 @media (max-width: 1600px) {
 
     .imij, .klips,
@@ -889,12 +947,16 @@ a:hover {
 
 @media (max-width: 1400px) {
     .reports h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .imij, .klips,
     .reports, .photo {
         height: 650px;
+    }
+
+    .cases-content {
+        padding-bottom: 60px;
     }
 }
 
@@ -923,6 +985,10 @@ a:hover {
         display: flex;
     }
 
+    .reports h1 {
+        font-size: 50px;
+    }
+
 }
 
 
@@ -931,17 +997,9 @@ a:hover {
         font-size: 50px;
     }
 
-    .reports h1 {
-        font-size: 60px;
-    }
-
-    
-}
-
-@media (max-width: 1020px) {
     .navbar-nav .nav-link {
         font-size: 14px;
-    }  
+    }
 }
 
 @media (max-width: 992px) {
@@ -968,6 +1026,8 @@ a:hover {
     .imij, .klips,
     .reports, .photo, .social {
         height: 500px;
+        filter: grayscale(0%); 
+        overflow: hidden;
     }
 
     .yellow-border {
@@ -991,7 +1051,7 @@ a:hover {
         display: flex;
     }
 
-    .navbar-nav .nav-item:not(:first-child),
+    .navbar-nav .nav-item,
     .navbar-buttons {
         display: none;
     }
@@ -1015,12 +1075,41 @@ a:hover {
     .mtt-rem2 {
         margin-top: 0rem;
     }
+
+    .hiden-logo {
+        display: block;
+    }
+
+    .display-3 {
+        font-size: 120px;
+    }
+
+    .cases-content {
+        opacity: 1;
+        margin: 0px !important;
+    }
+
+    .klips .cases-content,
+    .photo .cases-content {
+        transform: translateX(0%);
+    }
+
+    .imij .cases-content,
+    .reports .cases-content,
+    .social .cases-content {
+        transform: translateX(0%);
+    }
+
 }
 
 @media (max-width: 768px) {
 
     .display-3 {
-        font-size: 100px;
+        font-size: 90px;
+    }
+
+    .lead {
+        font-size: 20px;
     }
 
     .imij .cases-content {
@@ -1030,25 +1119,6 @@ a:hover {
     .imij h1 {
         color: white;
     }
-
-    .cases-content.row {
-        margin: 0px;
-        padding: 50px 0px 100px 0px;
-    }
-
-    .klips h1, .reports h1, 
-    .photo h1 {
-        font-size: 100px;
-    }
-
-    .list-unstyled li {
-        height: 80px;
-    }
-
-    .imij, .klips,
-    .reports, .photo, .social {
-        height: 400px;
-    }
 }
 
 @media (max-width: 576px) {
@@ -1057,19 +1127,15 @@ a:hover {
     }
 
     .display-4 {
-        font-size: 26px;
+        font-size: 18px;
     }
 
     .lead {
         font-size: 20px;
     }
 
-    .reports h1 {
-        font-size: 62px;
-    }
-
     .photo h1 {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .carousel {
@@ -1099,14 +1165,13 @@ a:hover {
     .form-inner {
         width: 100% !important;
     }
-
-    .imij, .klips,
-    .reports, .photo, .social {
-        height: 300px;
-    }
 }
 
 @media (max-width: 450px) {
+    .display-3 {
+        font-size: 50px;
+    }
+
     .carousel {
         width: 300px;
     }
@@ -1116,28 +1181,32 @@ a:hover {
         margin-bottom: 0px !important;
     }
 
-    .imij, .klips,
-    .reports, .photo, .social {
-        height: 200px;
+    .reports h1 {
+        font-size: 42px;
     }
-}
 
-@media (max-width: 370px) {
-    .display-3 {
+    .klips h1 {
         font-size: 60px;
     }
 
     .imij h1 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
-    .klips h1 {
-        font-size: 80px;
+    .social h1 {
+        font-size: 50px;
     }
 
-    .reports h1 {
-        font-size: 52px;
+    .case-button a {
+        font-size: 16px;
     }
+
+    .cases-content {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 370px) {
 
     .list-unstyled li p {
         font-size: 12px;
@@ -1145,10 +1214,6 @@ a:hover {
 
     .work h2 {
         font-size: 22px;
-    }
-
-    .list-unstyled li {
-        height: 60px;
     }
 
     .review-text h1 {
@@ -1160,4 +1225,11 @@ a:hover {
         font-size: 12px !important;
     }
 
+    #form-num, #form-mail {
+        font-size: 18px;
+    }
+
+    .reports h1 {
+        font-size: 36px;
+    }
 }

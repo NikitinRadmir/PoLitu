@@ -3,7 +3,7 @@ section {
 }
 
 .portfolio-header-container {
-    background-color: black;
+    background-color: #ffa834;
 }
 
 .portfolio-header {
@@ -36,15 +36,18 @@ section {
 }
 
 .content p {
-    font-size: 36px;
+    font-size: 25px;
+    font-family: 'Etude Noire Light';
 }
 
 .question {
     display: inline-block;
     color: #202020;
-    background-color: rgba(255, 168, 52, 1);
+    background-color: #ffffff;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    font-size: 36px;
+    font-family: 'Etude Noire Medium' !important;
 }
 
 .portfolio-btn{
@@ -78,6 +81,10 @@ section {
     .portfolio-btn{
         font-size: 20px;
     }
+    
+    .question {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -90,7 +97,7 @@ section {
     }  
 
     .content p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .portfolio-btn {

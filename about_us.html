@@ -6,8 +6,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/portfolio_pages.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/about_us.css">
+    <title>О нас</title>
 </head>
 <header>
     <nav class="navbar navbar-expand">
@@ -21,13 +21,13 @@
                         <a class="nav-link" href="index.html">Главная</a>
                     </li>
                     <li class="nav-item p-d-flex">
-                        <a class="nav-link active" href="portfolio.html">Портфолио</a>
+                        <a class="nav-link" href="portfolio.html">Портфолио</a>
                     </li>
                     <li class="nav-item p-d-flex">
                         <a class="nav-link" href="#">Контакты</a>
                     </li>
                     <li class="nav-item p-d-flex">
-                        <a class="nav-link" href="about_us.html">О нас</a>
+                        <a class="nav-link active" href="about_us.html">О нас</a>
                     </li>
                 </ul>
             </div>
@@ -42,6 +42,7 @@
     </nav>
 </header>
 <body>
+    <div class="black-top"></div>
     <button id="menu-toggle" class="menu-toggle">
         <i class="fas fa-bars"></i>
     </button>
@@ -52,11 +53,11 @@
             <li class="nav-item-menu">
                 <img src="src/img/main/logo.png" alt="Logo" class="menu-logo">
             </li>
-            <li class="nav-item-menu p-d-flex border-b">
+            <li class="nav-item-menu p-d-flex active border-b">
                 <a class="nav-link" href="index.html" style="font-size: 25px !important;">Главная</a>
             </li>
-            <li class="nav-item-menu p-d-flex active border-b">
-                <a class="nav-link active" href="portfolio.html" style="font-size: 25px !important;">Портфолио</a>
+            <li class="nav-item-menu p-d-flex border-b">
+                <a class="nav-link" href="portfolio.html" style="font-size: 25px !important;">Портфолио</a>
             </li>
             <li class="nav-item-menu p-d-flex border-b">
                 <a class="nav-link" href="#" style="font-size: 25px !important;">Контакты</a>
@@ -68,45 +69,46 @@
                 <button class="btn btn-custom mr-2" style="font-size: 20px !important;"><a href="#form">Оставить заявку</a></button>
             </li>
             <li class="nav-item-menu">
-                <button class="btn btn-custom" style="font-size: 20px !important;"><a href="brief.html">Заполнить бриф</a></button>
+                <button class="btn btn-custom active-button" style="font-size: 20px !important;"><a href="brief.html">Заполнить бриф</a></button>
             </li>
         </ul>
     </div>
     <!-- Overlay -->
     <div id="overlay" class="overlay"></div>
+    <script src="js/script.js"></script>
 
-    <div class="colour_line" style="background-color:rgba(254, 228, 209, 1);"></div>
-
-    <div class="container text-center mt-5 pt-4">
-        <div class="portf-hp photo-hp col-12 col-lg-8 offset-lg-2">
-           <h1>Фото-съемка</h1>
-            <p>Профессиональная фотосъемка — это создание качественных и эстетически привлекательных изображений с помощью профессионального оборудования и знаний</p>
+    <section class="about-us-container">
+        <div class="about-us-head">
+            <img src="/src/img/main/one_new.jpg" alt="photo">
+            <h1>Создайте уникальный видеоконтент,<br> который привлечет внимание!</h1>
         </div>
-    </div>
 
-    <div class="row portf-images mt-5 pt-5">
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 upper-img-cut1"><img src="src/img/portfolio/photo/1decf62301893f834dc9b58f352d6240.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 upper-img-cut2"><img src="src/img/portfolio/photo/246b465e90edc363453d01e76f75c411.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0"><img src="src/img/portfolio/photo/18e62c6b0eaece8c617ac0c8c91d2045.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 upper-img-cut2"><img src="src/img/portfolio/photo/114bfaacad5d18bc8b2c40d3f161acae.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 upper-img-cut3"><img src="src/img/portfolio/photo/e3777218cb30813e90c71785c24e26f1.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 upper-img-cut2"><img src="src/img/portfolio/photo/84911ab04e586e7f017070f4ba2c9ae8.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 upper-img-cut3"><img src="src/img/portfolio/photo/cd04848c0197d9e9ea6ae2bbdf32d615.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 upper-img-cut3"><img src="src/img/portfolio/photo/6b581ea34dddedfe5136f3f5633840f9.png" alt=""></a>
-    </div>
+        <div class="why-its-needs">
+            <h2>Зачем это нужно?</h2>
+            <p>Профессионально снятые видео помогут выделиться в мире социальных сетей и повысить узнаваемость бренда. В современном мире привлекательный и запоминающийся контент поможет в развитии любого бизнеса</p>
+        </div>
 
-    <div class="application-form mt-5 pt-5" id="form">
+        <div class="why-choose-us">
+            <h2>Почему выбирают нас</h2>
+            <p class="wcup"><span style="color: #ffa834">Индивидуальный подход</span> — наш главный приоритет. Мы работаем с вашей целевой аудиторией, выявляя их боли и потребности. Это позволяет нам создавать видео, которое привлекает внимание и резонирует с нужными кругами, устанавливая глубокую связь и обеспечивая высокий отклик. Вместе мы создадим контент, который повысит вашу узнаваемость и поднимет продажи</p>
+            <p class="wcup"><span style="color: #ffa834">Качественная съемка</span> — наша команда профессионалов обеспечит высокое качество видео, что поможет вам произвести впечатление на вашу аудиторию.</p>
+            <p><span style="color: #ffa834">Разнообразие форматов</span> — мы предлагаем широкий спектр форматов — от обучающих роликов до развлекательных видео, которые подойдут для любой платформы</p>
+        </div>
+
+        <div class="we-offer">
+            <h2>Мы предлагаем</h2>
+            <p>Полный цикл услуг: от идеи до готового видео с тщательной проработкой концепции, сценария и визуального стиля. Мы активно вовлекаем вас на каждом этапе, чтобы создать контент, который точно отражает ваш бренд и его ценности, а гибкие условия сотрудничества, позволяют всегда соответствовать вашему бюджету</p>
+        </div>
+    </section>
+
+    <div class="application-form" id="form">
         <h1 class="text-center mb-4">Мы открыты для работы над новыми проектами!</h1>
         <section class="form-substr mb-4">
             <p>Хотите получить консультацию, уточнить стоимость или заказать ролик? Оставьте заявку и мы свяжемся с вами:</p>
         </section>
-        <section class="row row-cols-1 row-cols-lg-2 contact-info mb-4 justify-content-center">
-            <div class="col-12 col-lg-6 pr-4 mb-4 mb-lg-0">
-                <p id="form-num">+7 (000) 000-00-00</p>
-                <p id="form-mail">pochta@gmail.com</p>
-            </div>
-            <form id="application-form" class="col-12 col-lg-6 row">
-                <div class="row row-cols-1 col-10 col-sm-8 col-lg-7 offset-1 offset-sm-2 offset-lg-0 form-inner">
+        <section class="row contact-info mb-4 justify-content-center">
+            <form id="application-form" class="col-12 row">
+                <div class="row row-cols-1 col-10 col-sm-8 col-lg-6 offset-1 offset-sm-2 offset-lg-3 form-inner">
                     <div class="form-group justify-content-center">
                         <input type="text" class="form-controle" id="fullname" name="fullname" placeholder="1. Фамилия Имя Отчество" required>
                     </div>
@@ -124,11 +126,13 @@
                     </div>
                 </div>
             </form>
-            
+            <div class="col-12 pr-4 mb-4 mb-lg-0">
+                <p id="form-num">+7 (000) 000-00-00</p>
+                <p id="form-mail">pochta@gmail.com</p>
+            </div> 
         </section>
     </div>
 
-    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
