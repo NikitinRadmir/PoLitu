@@ -1,6 +1,36 @@
+/* Подключение шрифта Etude Noire из папки src/fonts */
+@font-face {
+    font-family: 'Etude Noire Medium'; 
+    src: url('/src/fonts/Etude Noire Medium.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Etude Noire Bold'; 
+    src: url('src/fonts/Etude Noire Bold.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Etude Noire Light'; 
+    src: url('/src/fonts/Etude Noire Light.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Etude Noire Regular'; 
+    src: url('src/fonts/Etude Noire Regular.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, a, button, .nav-link, .btn, .case-button a {
+    font-family: 'Etude Noire Medium', sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #202020;
     color: white;
 }
@@ -69,18 +99,20 @@ html {
     font-size: 150px;
     font-weight: 600;
     line-height: 1.2;
+    margin-bottom: -20px !important;
 }
 
 .display-4 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 0px !important;
+    margin-bottom: 50px !important;
 }
 
 .lead {
+    font-family: "Etude Noire Light", sans-serif;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 .btn-warning {
@@ -88,20 +120,29 @@ html {
     background-color: #FFA834;
     border-color: #FFA834;
     border-radius: 50px;
-    padding: 15px;
+    padding: 10px 70px;
+    line-height: 22px;
+
 }
 
 /*Коротко о нас*/
 .section-title {
     color: #ffa834;
-    font-size: 2.5rem;
+    font-size: 50px;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
+
 .about-us-content {
+    font-family: 'Etude Noire Light', sans-serif;
     margin-top: 40px;
 }
+.custom-span {
+    display: inline-block; 
+    margin-bottom: 10px; 
+}
+
 
 .feature {
     text-align: center;
@@ -109,9 +150,13 @@ html {
 }
 
 .feature h3 {
-    color: #ffa834;
+    color: #ffffff;
     font-size: 1.5rem;
     margin-bottom: 20px;
+}
+
+.feature p {
+    font-family: 'Etude Noire Light';
 }
 
 .feature-icon {
@@ -206,8 +251,8 @@ html {
 }
 
 .klips h1, .reports h1, 
-.photo h1 {
-    font-size: 100px;
+.photo h1, .social {
+    font-size: 70px;
     font-weight: 700;
 }
 
@@ -289,7 +334,7 @@ html {
     border-radius: 5px;
     transform: scale(1);
     transition: transform 2s ease, background-color 2s ease;
-
+    line-height: 20px !important;
 }
 
 .case-button:hover {
@@ -380,6 +425,8 @@ a.active {
     color: #1a1a1a;
     border-radius: 30px;
     transition: background-color 0.3s;
+    line-height: 15px;
+    padding: 5px 30px;
 }
 
 .btn-custom:hover {
@@ -527,6 +574,7 @@ a:hover {
 .list-unstyled li {
     background-color: transparent;
     border: 1px solid white;
+    border-radius: 15px;
     padding: 5px; 
     margin-bottom: 15px; 
     text-align: center;
@@ -770,13 +818,14 @@ a:hover {
 
 
 .application-form h1 {
-    color: #ffffff;
+    color: #FFA834;
     text-align: center;
     margin-top: 50px;
     font-weight: 600;
 }
 
 .application-form p {
+    font-family: 'Etude Noire Light';
     color: #ffffff;
     font-size: 16px;
 
