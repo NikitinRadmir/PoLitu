@@ -100,24 +100,82 @@
     </div>
 
     <div class="row portf-images mt-5 pt-5">
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0"><img src="src/img/portfolio/reports/977d68f7b80ca6f5c33fc910eded7d02.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0"><img src="src/img/portfolio/reports/5d06ee940814fa48620e5bf8a0556136.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0"><img src="src/img/portfolio/reports/55389b36376a5a2ebf254a830aca3b7e.png" alt=""></a>
-        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0"><img src="src/img/portfolio/reports/ad88ff1811f3828462f49cb5ab331b58.jpg" alt=""></a>
+        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 image-container" data-popup="popup1">
+            <img src="src/img/portfolio/reports/977d68f7b80ca6f5c33fc910eded7d02.png" alt="">
+            <div class="image-overlay p-4 text-center">
+                <h2>Отчётное видео юбилея Росреестра</h2>
+            </div>
+        </a>
+        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 image-container" data-popup="popup2">
+            <img src="src/img/portfolio/reports/5d06ee940814fa48620e5bf8a0556136.png" alt="">
+            <div class="image-overlay p-4 text-center">
+                <h2>Отчётное видео с регионального чемпионата по Массажу РТ</h2>
+            </div>
+        </a>
+        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 image-container" data-popup="popup3">
+            <img src="src/img/portfolio/reports/55389b36376a5a2ebf254a830aca3b7e.png" alt="">
+            <div class="image-overlay p-4 text-center">
+                <h2>Отчётное видео с "Девишника Анны Барби"</h2>
+            </div>
+        </a>
+        <a class="col-12 col-md-6 p-0 mb-3 mb-md-0 image-container" data-popup="popup4">
+            <img src="src/img/portfolio/reports/ad88ff1811f3828462f49cb5ab331b58.jpg" alt="">
+            <div class="image-overlay p-4 text-center">
+                <h2>Кукинг мастер-класс от компании “Сладкая жизнь”</h2>
+            </div>
+        </a>
+
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+
+        <div class="popup" id="popup1">
+            <div class="popup-content">
+                <span class="popup-close" id="closePopup">&times;</span>
+                <h2>Отчётное видео юбилея Росреестра</h2>
+                <iframe src="https://vkvideo.ru/video_ext.php?oid=-216560690&id=456239098&hd=2&autoplay=1" class="vk-video" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+            <div class="popup" id="popup2">
+                <div class="popup-content">
+                    <span class="popup-close" id="closePopup">&times;</span>
+                    <h2>Отчётное видео с регионального чемпионата по Массажу РТ</h2>
+                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-216560690&id=456239105&hd=2&autoplay=1" class="vk-video" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+            <div class="popup" id="popup3">
+                <div class="popup-content">
+                    <span class="popup-close" id="closePopup">&times;</span>
+                    <h2>Отчётное видео с "Девишника Анны Барби"</h2>
+                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-216560690&id=456239100&hd=2&autoplay=1" class="vk-video" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+            <div class="popup" id="popup4">
+                <div class="popup-content">
+                    <span class="popup-close" id="closePopup">&times;</span>
+                    <h2>Кукинг мастер-класс от компании “Сладкая жизнь”</h2>
+                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-216560690&id=456239101&hd=2&autoplay=1" class="vk-video" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="application-form mt-5 pt-5" id="form">
+    <div class="application-form" id="form">
         <h1 class="text-center mb-4">Мы открыты для работы над новыми проектами!</h1>
         <section class="form-substr mb-4">
             <p>Хотите получить консультацию, уточнить стоимость или заказать ролик? Оставьте заявку и мы свяжемся с вами:</p>
         </section>
-        <section class="row row-cols-1 row-cols-lg-2 contact-info mb-4 justify-content-center">
-            <div class="col-12 col-lg-6 pr-4 mb-4 mb-lg-0">
-                <p id="form-num">+7 (000) 000-00-00</p>
-                <p id="form-mail">pochta@gmail.com</p>
-            </div>
-            <form id="application-form" class="col-12 col-lg-6 row">
-                <div class="row row-cols-1 col-10 col-sm-8 col-lg-7 offset-1 offset-sm-2 offset-lg-0 form-inner">
+        <section class="row contact-info mb-4 justify-content-center">
+            <form id="application-form" class="col-12 row">
+                <div class="row row-cols-1 col-10 col-sm-8 col-lg-6 offset-1 offset-sm-2 offset-lg-3 form-inner">
                     <div class="form-group justify-content-center">
                         <input type="text" class="form-controle" id="fullname" name="fullname" placeholder="1. Фамилия Имя Отчество" required>
                     </div>
@@ -135,11 +193,15 @@
                     </div>
                 </div>
             </form>
-            
+            <div class="col-12 pr-4 mb-4 mb-lg-0">
+                <p id="form-num">+7 (000) 000-00-00</p>
+                <p id="form-mail">pochta@gmail.com</p>
+            </div> 
         </section>
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/portfolio-pages.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

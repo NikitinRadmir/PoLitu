@@ -19,6 +19,7 @@ section {
 .photo-container {
     width: 100%;  
     overflow: hidden; 
+    margin-left: 1px;
 }
 
 
@@ -63,6 +64,10 @@ section {
 .portfolio-btn:hover {
     background-color: rgba(255, 168, 52, 1);
     border-color: rgba(255, 168, 52, 1);
+}
+
+.vertical-img {
+    max-height: 808px !important;
 }
 
 @media (max-width: 768px) {

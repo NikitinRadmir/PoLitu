@@ -108,6 +108,11 @@
     max-height: 808px !important;
 }
 
+.portf-images {
+    width: 100%;
+    margin-left: 1px;
+}
+
 .portf-images img {
     width: 100%;
     height: 100%;
@@ -124,6 +129,10 @@
 
 .upper-img-cut3 img {
     object-position: 20% 30%;
+}
+
+.upper-img-cut4 img {
+    object-position: 20% 70%;
 }
 
 .to-the-right-img img {
@@ -208,6 +217,10 @@
     cursor: pointer;
 }
 
+.vk-video {
+    width: 100%;
+    height: 480px;
+}
 
 @media (max-width: 1600px) {
     .portf-hp2 p {
@@ -290,6 +303,10 @@
 
     .portf-images a {
         max-height: 285px;
+    }
+
+    .vk-video {
+        height: 400px;
     }
 }
 
